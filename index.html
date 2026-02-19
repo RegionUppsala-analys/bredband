@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bredband och Internet</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Inget resultat",
+    "search-matching-documents-text": "matchande dokument",
+    "search-copy-link-title": "Kopiera länk för att söka",
+    "search-hide-matches-text": "Göm ytterligare resultat",
+    "search-more-match-text": "annat resultat i detta dokument",
+    "search-more-matches-text": "fler resultat i detta dokument",
+    "search-clear-button-title": "Rensa",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Avbryt",
+    "search-submit-button-title": "Verkställ",
+    "search-label": "Sök"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/plotly-binding-4.11.0/plotly.js"></script>
+
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./Figurer/Region Uppsala_Logo_CMYK_Vit.png" alt="Region Uppsala" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Sök"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Skifta navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Bredband och Internet</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Innehåll</h2>
+   
+  <ul>
+  <li><a href="#inledning" id="toc-inledning" class="nav-link active" data-scroll-target="#inledning">Inledning</a></li>
+  <li><a href="#bredband" id="toc-bredband" class="nav-link" data-scroll-target="#bredband">Bredband</a>
+  <ul class="collapse">
+  <li><a href="#tillgång-eller-anslutningsmöjlighet-till-1-gbs" id="toc-tillgång-eller-anslutningsmöjlighet-till-1-gbs" class="nav-link" data-scroll-target="#tillgång-eller-anslutningsmöjlighet-till-1-gbs">Tillgång eller anslutningsmöjlighet till 1 gb/s</a></li>
+  <li><a href="#tillgång-till-fast-bredband-100-mbits" id="toc-tillgång-till-fast-bredband-100-mbits" class="nav-link" data-scroll-target="#tillgång-till-fast-bredband-100-mbits">Tillgång till fast bredband 100 Mbit/s</a></li>
+  <li><a href="#bredbandskollen" id="toc-bredbandskollen" class="nav-link" data-scroll-target="#bredbandskollen">Bredbandskollen</a></li>
+  </ul></li>
+  <li><a href="#mobilt" id="toc-mobilt" class="nav-link" data-scroll-target="#mobilt">Mobilt</a>
+  <ul class="collapse">
+  <li><a href="#per-operatör" id="toc-per-operatör" class="nav-link" data-scroll-target="#per-operatör">Per operatör</a></li>
+  <li><a href="#tillgång-till-5g" id="toc-tillgång-till-5g" class="nav-link" data-scroll-target="#tillgång-till-5g">Tillgång till 5G</a></li>
+  </ul></li>
+  <li><a href="#tekniker" id="toc-tekniker" class="nav-link" data-scroll-target="#tekniker">Tekniker</a></li>
+  <li><a href="#karttjänster" id="toc-karttjänster" class="nav-link" data-scroll-target="#karttjänster">Karttjänster</a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Källor</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bredband och Internet</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div style="border:1px solid #ccc; background-color:#f9f9f9; padding:1rem 1.5rem; margin:1.5rem 0; border-radius:8px; max-width:100%; box-sizing:border-box;">
+  <p style="margin:0.25rem 0; font-weight:bold;">Läget i Länet 2026 · Regional utveckling</p>
+  <p style="margin:0.25rem 0; font-style:italic; color:#555;">Publicerad: mars 2026. Nästa uppdatering planeras till våren 2027.</p>
+</div>
+<section id="inledning" class="level1">
+<h1>Inledning</h1>
+<p>Tillgång till snabb och stabil digital infrastruktur är en grundläggande förutsättning för samhällsutveckling, näringsliv, offentlig service och invånarnas vardag. Bredband och mobil kommunikation spelar en central roll för såväl arbete och studier som för vård, omsorg och social delaktighet. Samtidigt varierar tillgången till digital infrastruktur mellan olika geografiska områden, inte minst mellan tätbebyggda områden och glesbygd.</p>
+<p>Denna rapport ger en samlad och aktuell bild av bredbands- och mobiltäckningen i länets kommuner, med fokus på utvecklingen över tid och skillnader mellan kommuner och områdestyper. Analysen omfattar både fast bredband och mobila nät, samt tillgång till olika tekniker såsom fiber, kabel-tv, LTE och 5G. Där det är relevant redovisas både andel hushåll och antal hushåll med tillgång, för att belysa såväl täckningsgrad som faktisk omfattning.</p>
+<p>Alla interaktiva grafer kan laddas ned genom att trycka på <img src="Figurer/download_graph.png" class="img-fluid" width="120" alt="Nerladdningsknapp">. Då sparas just den bild som visas, med exempelvis den valda regionen. Genom att dubbelklicka på kommunnamn i grafens legend så zoomas den kommunen in för en mer detaljerad vy(flera kan väljas samtidigt).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Wifi_liljeröd_RGB" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Dekorativ bild">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Wifi_liljeröd_RGB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-Wifi_liljeröd_RGB-1.png" class="img-fluid figure-img" style="width:50.0%" alt="Dekorativ bild">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Wifi_liljeröd_RGB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;1: Wifi_Liljeröd_RGB
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="bredband" class="level1">
+<h1>Bredband</h1>
+<p>Regeringens mål för 2025, ofta kallat ”2025-målet”, syftar till att säkerställa bredbandstillgång för alla hushåll och företag i Sverige. Målet består av tre delmål som alla måste uppfyllas för att det övergripande målet ska anses vara uppnått:</p>
+<ul>
+<li><p>98 % av hushåll och företag ska ha tillgång till bredbandsinfrastruktur som möjliggör minst 1 Gbit/s, antingen genom faktisk anslutning eller i direkt närhet till infrastrukturen.</p></li>
+<li><p>1,9 % av resterande hushåll och företag ska ha tillgång till minst 100 Mbit/s.</p></li>
+<li><p>0,1 % av resterande hushåll och företag ska ha tillgång till minst 30 Mbit/s.</p></li>
+</ul>
+<section id="tillgång-eller-anslutningsmöjlighet-till-1-gbs" class="level2">
+<h2 class="anchored" data-anchor-id="tillgång-eller-anslutningsmöjlighet-till-1-gbs">Tillgång eller anslutningsmöjlighet till 1 gb/s</h2>
+<p>Här visas andel av områdets hushåll som har tillgång till bredband om minst 1 gigabit per sekund, eller fiber i absolut närhet. Måttet inkluderar tillgång till fiber och kabel-tv-nät (DOCSIS 3) samt hushåll och arbetsställen som bedöms ligga i direkt närhet till en fiberanslutning.</p>
+<p>Tillgång definieras som att:</p>
+<ul>
+<li>faktisk anslutning finns,</li>
+<li>anslutning kan beställas till en kostnad om högst 40 000 kronor, eller</li>
+<li>hushållet eller arbetsstället bedöms ligga i absolut närhet till fiber.</li>
+</ul>
+<p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar vidare till <span class="citation" data-cites="pts">Post- och telestyrelsen (PTS) (<a href="#ref-pts" role="doc-biblioref">2025</a>)</span>.</p>
+<p>PTS samlar in underlag om täckning för olika accesstekniker från berörda aktörer. Underlaget matchas mot Fastighetsregistret och kompletteras med antaganden som ligger till grund för kartläggningen. För tillgång till mycket höga hastigheter, upp till 1 Gbit/s under gynnsamma förhållanden och minst 500 Mbit/s i högtrafik, krävs i dag trådbundna accesstekniker, såsom fiber- eller kabel-tv-nät.</p>
+<p>Uppgifterna avser situationen den 1 oktober respektive år. Till och med 2014 avsågs befolkning i stället för hushåll. Från och med 2021 avser uppgifterna åter befolkning.</p>
+<div class="cell">
+<div id="fig-tillbred_gb" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tillbred_gb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-c9a465df501906269c8e" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-c9a465df501906269c8e">{"x":{"visdat":{"39b819c746be":["function () ","plotlyVisDat"]},"cur_data":"39b819c746be","attrs":{"39b819c746be":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[80.055752659999996,79.918506969999996,83.38829552,85.345239230000004,93.718762010000006,95.564191269999995,98.278195139999994,98.650000000000006],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8},"visible":true,"inherit":true},"39b819c746be.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[47.287184279999998,61.450440700000001,68.768127000000007,82.593651269999995,95.156131000000002,98.478457370000001,98.8890557,98.200000000000003],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8},"visible":true,"inherit":true},"39b819c746be.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[83.021617680000006,88.555010179999996,94.00445852,96.609978600000005,97.478898270000002,98.277916169999997,100,99.670000000000002],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8},"visible":true,"inherit":true},"39b819c746be.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[77.37125288,74.18252081,82.368718240000007,88.061581529999998,94.315112540000001,97.940216030000002,98.977012880000004,98.290000000000006],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8},"visible":true,"inherit":true},"39b819c746be.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[60.530042479999999,63.559742190000001,65.788438850000006,70.734818009999998,85.990338159999993,86.528183929999997,94.859437749999998,94.569999999999993],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8},"visible":true,"inherit":true},"39b819c746be.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[92.075468130000004,93.894360550000002,95.448303100000004,97.489411059999995,97.824607880000002,98.893256840000006,99.580707369999999,99.400000000000006],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8},"visible":true,"inherit":true},"39b819c746be.6":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[86.54578017,87.285682480000006,88.016896399999993,93.925657299999997,93.748599600000006,97.634456589999999,98.806366049999994,97.980000000000004],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8},"visible":true,"inherit":true},"39b819c746be.7":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[71.661237790000001,73.752771620000004,77.935649459999993,80.131362890000005,86.450146770000003,88.778195490000002,94.481401669999997,95.870000000000005],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8},"visible":true,"inherit":true},"39b819c746be.8":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.605663620000001,93.645462929999994,96.52888351,97.436373770000003,98.648818500000004,99.576998529999997,99.963686980000006,99.930000000000007],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8},"visible":false,"inherit":true},"39b819c746be.9":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[56.357308580000002,72.26715969,76.251137400000005,84.816636849999995,94.569202570000002,99.183117769999996,99.864468040000006,98.909999999999997],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8},"visible":false,"inherit":true},"39b819c746be.10":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[85.322745900000001,90.955414009999998,96.352433759999997,98.396361900000002,98.592045049999996,99.214749060000003,100,99.780000000000001],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8},"visible":false,"inherit":true},"39b819c746be.11":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.456932559999998,89.754018979999998,92.794564629999996,95.601277049999993,98.586055579999993,99.750351069999994,99.925782990000002,99.819999999999993],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8},"visible":false,"inherit":true},"39b819c746be.12":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[78.383811309999999,79.147982060000004,81.443968319999996,85.701345759999995,96.999865459999995,97.419964879999995,99.664609609999999,98.689999999999998],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8},"visible":false,"inherit":true},"39b819c746be.13":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[96.67748229,97.500197150000005,98.283282369999995,99.257262429999997,99.09948584,99.731687429999994,99.964791020000007,99.870000000000005],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8},"visible":false,"inherit":true},"39b819c746be.14":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.059546310000002,89.870740310000002,90.721649479999996,96.863777830000004,95.678866589999998,99.133895129999999,99.463369110000002,99.400000000000006],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8},"visible":false,"inherit":true},"39b819c746be.15":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[88.566013900000002,90.188726410000001,91.666666669999998,94.479436829999997,96.092828109999999,97.923739879999999,99.270358310000006,99.010000000000005],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8},"visible":false,"inherit":true},"39b819c746be.16":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[48.786828419999999,35.499680380000001,38.691507799999997,44.606718129999997,77.69607843,81.896011689999995,92.603911980000007,94.280000000000001],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8},"visible":false,"inherit":true},"39b819c746be.17":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[28.707224329999999,39.57943925,53.503480279999998,78.022988510000005,96.319854609999993,97.086508289999998,96.956132499999995,96.739999999999995],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8},"visible":false,"inherit":true},"39b819c746be.18":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[40.845070419999999,51.093439359999998,47.30392157,68.068833650000002,77.754677749999999,79.820627799999997,100,97.319999999999993],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8},"visible":false,"inherit":true},"39b819c746be.19":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[36.26522327,22.8115016,43.259557340000001,59.854014599999999,78.113440199999999,90.470057949999998,94.910941480000005,90.870000000000005],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8},"visible":false,"inherit":true},"39b819c746be.20":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[5.5693069299999998,16.340391530000002,16.997167139999998,23.813387420000002,53.29604475,54.455051709999999,80.566640059999997,null],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8},"visible":false,"inherit":true},"39b819c746be.21":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[26.736509760000001,42.30714991,53.685399599999997,73.143821389999999,80.933298859999994,87.054886210000006,94.538377330000003,92.530000000000001],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8},"visible":false,"inherit":true},"39b819c746be.22":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[41.276595739999998,40.677966099999999,37.826086959999998,41.702127660000002,57.89473684,66.985645930000004,86.974789920000006,68.900000000000006],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8},"visible":false,"inherit":true},"39b819c746be.23":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[24.381625440000001,27.169677650000001,39.015817220000002,39.581151830000003,61.383776410000003,65.291750500000006,82.221480990000003,87.640000000000001],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8},"visible":false,"inherit":true}},"layout":{"margin":{"b":60,"l":60,"t":120,"r":10},"title":{"text":"<b> Hushåll med tillgång till eller möjlighet att<br />ansluta till bredband om minst 1 Gbit/s, andel (%) <b>","y":0.94999999999999996,"x":0.55000000000000004,"font":{"size":20,"color":"#B81867"}},"xaxis":{"domain":[0,1],"automargin":true,"title":"","tickangle":-45,"type":"category","categoryorder":"array","categoryarray":["2017","2018","2019","2020","2021","2022","2023","2024"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b>Andel (%)<b>","rangemode":"tozero"},"hovermode":"x unified","updatemenus":[{"y":-0.14999999999999999,"x":1.1000000000000001,"buttons":[{"method":"update","args":[{"visible":[true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},{"title":"<b> Hushåll med tillgång till eller möjlighet att<br />ansluta till bredband om minst 1 Gbit/s, andel (%) <b>","yaxis":{"title":"<b>Andel (%)<b>","rangemode":"tozero"}}],"label":"Alla hushåll"},{"method":"update","args":[{"visible":[false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false]},{"title":"<b> Hushåll i tätbebyggt område med tillgång till<br />eller möjlighet i att ansluta till bredband om<br />minst 1 Gbit/s, andel (%) <b>","yaxis":{"title":"<b>Andel (%)<b>","rangemode":"tozero"}}],"label":"Hushåll i tätbebyggt område"},{"method":"update","args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true]},{"title":"<b> Hushåll i glesbebyggt område med tillgång till<br />eller möjlighet att ansluta till bredband om minst<br />1 Gbit/s, andel (%) <b>","yaxis":{"title":"<b>Andel (%)<b>","rangemode":"tozero"}}],"label":"Hushåll i glesbebyggt område"}],"direction":"up"}],"annotations":[{"text":"Källa: Kolada och Post- och telestyrelsen","x":0,"y":-0.22,"xref":"paper","yref":"paper","xanchor":"left","yanchor":"bottom","showarrow":false,"font":{"size":12}}],"showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"modeBarButtonsToRemove":["zoom2d","pan2d","select2d","lasso2d","zoomIn2d","zoomOut2d"],"displaylogo":false},"data":[{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[80.055752659999996,79.918506969999996,83.38829552,85.345239230000004,93.718762010000006,95.564191269999995,98.278195139999994,98.650000000000006],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8,"line":{"color":"rgba(31,119,180,1)"}},"visible":true,"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[47.287184279999998,61.450440700000001,68.768127000000007,82.593651269999995,95.156131000000002,98.478457370000001,98.8890557,98.200000000000003],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8,"line":{"color":"rgba(255,127,14,1)"}},"visible":true,"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[83.021617680000006,88.555010179999996,94.00445852,96.609978600000005,97.478898270000002,98.277916169999997,100,99.670000000000002],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8,"line":{"color":"rgba(44,160,44,1)"}},"visible":true,"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[77.37125288,74.18252081,82.368718240000007,88.061581529999998,94.315112540000001,97.940216030000002,98.977012880000004,98.290000000000006],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8,"line":{"color":"rgba(214,39,40,1)"}},"visible":true,"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[60.530042479999999,63.559742190000001,65.788438850000006,70.734818009999998,85.990338159999993,86.528183929999997,94.859437749999998,94.569999999999993],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8,"line":{"color":"rgba(148,103,189,1)"}},"visible":true,"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[92.075468130000004,93.894360550000002,95.448303100000004,97.489411059999995,97.824607880000002,98.893256840000006,99.580707369999999,99.400000000000006],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8,"line":{"color":"rgba(140,86,75,1)"}},"visible":true,"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[86.54578017,87.285682480000006,88.016896399999993,93.925657299999997,93.748599600000006,97.634456589999999,98.806366049999994,97.980000000000004],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8,"line":{"color":"rgba(227,119,194,1)"}},"visible":true,"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[71.661237790000001,73.752771620000004,77.935649459999993,80.131362890000005,86.450146770000003,88.778195490000002,94.481401669999997,95.870000000000005],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8,"line":{"color":"rgba(127,127,127,1)"}},"visible":true,"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.605663620000001,93.645462929999994,96.52888351,97.436373770000003,98.648818500000004,99.576998529999997,99.963686980000006,99.930000000000007],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8,"line":{"color":"rgba(188,189,34,1)"}},"visible":false,"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[56.357308580000002,72.26715969,76.251137400000005,84.816636849999995,94.569202570000002,99.183117769999996,99.864468040000006,98.909999999999997],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8,"line":{"color":"rgba(23,190,207,1)"}},"visible":false,"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[85.322745900000001,90.955414009999998,96.352433759999997,98.396361900000002,98.592045049999996,99.214749060000003,100,99.780000000000001],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8,"line":{"color":"rgba(31,119,180,1)"}},"visible":false,"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.456932559999998,89.754018979999998,92.794564629999996,95.601277049999993,98.586055579999993,99.750351069999994,99.925782990000002,99.819999999999993],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8,"line":{"color":"rgba(255,127,14,1)"}},"visible":false,"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[78.383811309999999,79.147982060000004,81.443968319999996,85.701345759999995,96.999865459999995,97.419964879999995,99.664609609999999,98.689999999999998],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8,"line":{"color":"rgba(44,160,44,1)"}},"visible":false,"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[96.67748229,97.500197150000005,98.283282369999995,99.257262429999997,99.09948584,99.731687429999994,99.964791020000007,99.870000000000005],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8,"line":{"color":"rgba(214,39,40,1)"}},"visible":false,"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[89.059546310000002,89.870740310000002,90.721649479999996,96.863777830000004,95.678866589999998,99.133895129999999,99.463369110000002,99.400000000000006],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8,"line":{"color":"rgba(148,103,189,1)"}},"visible":false,"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[88.566013900000002,90.188726410000001,91.666666669999998,94.479436829999997,96.092828109999999,97.923739879999999,99.270358310000006,99.010000000000005],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8,"line":{"color":"rgba(140,86,75,1)"}},"visible":false,"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[48.786828419999999,35.499680380000001,38.691507799999997,44.606718129999997,77.69607843,81.896011689999995,92.603911980000007,94.280000000000001],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8,"line":{"color":"rgba(227,119,194,1)"}},"visible":false,"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[28.707224329999999,39.57943925,53.503480279999998,78.022988510000005,96.319854609999993,97.086508289999998,96.956132499999995,96.739999999999995],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8,"line":{"color":"rgba(127,127,127,1)"}},"visible":false,"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[40.845070419999999,51.093439359999998,47.30392157,68.068833650000002,77.754677749999999,79.820627799999997,100,97.319999999999993],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8,"line":{"color":"rgba(188,189,34,1)"}},"visible":false,"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[36.26522327,22.8115016,43.259557340000001,59.854014599999999,78.113440199999999,90.470057949999998,94.910941480000005,90.870000000000005],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8,"line":{"color":"rgba(23,190,207,1)"}},"visible":false,"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023"],"y":[5.5693069299999998,16.340391530000002,16.997167139999998,23.813387420000002,53.29604475,54.455051709999999,80.566640059999997],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8,"line":{"color":"rgba(31,119,180,1)"}},"visible":false,"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[26.736509760000001,42.30714991,53.685399599999997,73.143821389999999,80.933298859999994,87.054886210000006,94.538377330000003,92.530000000000001],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8,"line":{"color":"rgba(255,127,14,1)"}},"visible":false,"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[41.276595739999998,40.677966099999999,37.826086959999998,41.702127660000002,57.89473684,66.985645930000004,86.974789920000006,68.900000000000006],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8,"line":{"color":"rgba(44,160,44,1)"}},"visible":false,"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2017","2018","2019","2020","2021","2022","2023","2024"],"y":[24.381625440000001,27.169677650000001,39.015817220000002,39.581151830000003,61.383776410000003,65.291750500000006,82.221480990000003,87.640000000000001],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8,"line":{"color":"rgba(214,39,40,1)"}},"visible":false,"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tillbred_gb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;2
+</figcaption>
+</figure>
+</div>
+</div>
+<p>En stor del av alla hushåll i länets alla kommuner har idag tillgång eller möjlighet att ansluta sig till bredband om minst 1 Gbit/s, sett till tätbebyggt område så är den lägsta andelen 98,69 procent.</p>
+<p>Undersöks i stället glesbebyggt område så syns det mer skillnad mellan kommunerna, men också en stor förbättring sedan 2017 för samtliga kommuner. 5 av de 7 kommunerna som har data för år 2024 har en andel på över 90 procent, jämfört med 2017 där ingen kommun hade över 50 procent.</p>
+<p>Älvkarleby har en lägre andel för 2024 än 2023 och den lägsta andelen i länet för det senaste året, på 68,9 procent gällande tillgång eller möjlighet att ansluta sig till bredband om minst 1 Gbit i sekunden. Tierp saknar data för år 2024, men visar en stor utveckling från runt 5 procent år 2017 till 80 procent år 2023.</p>
+<p>Trots de höga andelarna i många kommuner uppfylls regeringens bredbandsmål för 2025 ännu inte fullt inom alla kommuner, men målet är formulerat på nationell nivå och avser den samlade tillgången i Sverige som helhet. Det innebär att enskilda kommuner kan ligga under målnivån utan att målet nödvändigtvis är ouppfyllt nationellt.</p>
+</section>
+<section id="tillgång-till-fast-bredband-100-mbits" class="level2">
+<h2 class="anchored" data-anchor-id="tillgång-till-fast-bredband-100-mbits">Tillgång till fast bredband 100 Mbit/s</h2>
+<p>I detta avsnitt så visas andel av områdets hushåll som har tillgång till fast bredband om minst 100 megabit per sekund. Med tillgång avses antingen faktisk anslutning eller omedelbar möjlighet att ansluta.</p>
+<p>PTS (Post- och telestyrelsen) samlar in underlag om täckning för olika accesstekniker från berörda aktörer. Underlaget matchas mot Fastighetsregistret och utgör, tillsammans med ett antal antaganden, grunden för kartläggningen. Uppgifterna avser situationen den 1 oktober respektive år. Till och med 2014 avsågs befolkning i stället för hushåll. Från och med 2021 avser uppgifterna åter befolkning.</p>
+<p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar vidare till <span class="citation" data-cites="pts">Post- och telestyrelsen (PTS) (<a href="#ref-pts" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="cell">
+<div id="fig-tillbred" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tillbred-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-19a36c57bee2c773dc36" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-19a36c57bee2c773dc36">{"x":{"visdat":{"39b84529217c":["function () ","plotlyVisDat"]},"cur_data":"39b84529217c","attrs":{"39b84529217c":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[35.630226469999997,35.41000931,35.998000249999997,43.349692640000001,45.225562060000001,52.798740430000002,55.747276229999997,68.134820070000004,68.821369279999999,73.667372150000006,76.635469389999997,82.449058050000005,86.062271929999994,89.431197800000007,95.549999999999997],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8},"inherit":true},"39b84529217c.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[0.16462136999999999,0.17921147000000001,5.4294249399999996,8.0086741900000007,8.8423242700000007,13.207855970000001,25.491449580000001,35.313376990000002,47.348074840000002,54.877118000000003,66.270497969999994,75.277989340000005,79.978909310000006,81.354151029999997,96.129999999999995],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8},"inherit":true},"39b84529217c.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[6.2940299299999998,8.6161214699999995,7.40158279,51.069074809999996,51.64570913,53.581003449999997,63.29082271,71.374787470000001,76.367772059999993,85.415933359999997,88.388332020000007,89.360284320000005,91.086320810000004,99.989461480000003,98.939999999999998],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8},"inherit":true},"39b84529217c.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[17.003100239999998,23.579603169999999,29.249433410000002,32.097395390000003,35.409332390000003,55.239327299999999,62.647382489999998,70.714834740000001,67.880499409999999,76.736307170000003,81.693491949999995,87.202572349999997,90.266264759999999,92.983511849999999,98.349999999999994],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8},"inherit":true},"39b84529217c.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[16.822196720000001,17.760771259999999,20.143454869999999,22.218914359999999,23.819923559999999,32.059314950000001,34.83765571,48.442241549999999,51.859196830000002,54.374754230000001,59.452565489999998,63.345410630000003,65.322174039999993,77.891566269999998,89.829999999999998],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8},"inherit":true},"39b84529217c.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[51.710009499999998,55.564768100000002,59.790510470000001,61.773182650000003,70.064426839999996,81.949498849999998,87.116154870000003,89.174590879999997,89.821170269999996,91.959356959999994,93.756480780000004,94.001796200000001,96.052911179999995,97.492853940000003,98.939999999999998],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8},"inherit":true},"39b84529217c.6":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[27.010036400000001,27.33465172,27.926936619999999,31.85381473,32.497261770000001,38.01102435,48.134750169999997,70.024625029999996,71.320418619999998,73.610493550000001,77.56119674,77.123011430000005,81.923677749999996,89.213085759999998,98.430000000000007],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8},"inherit":true},"39b84529217c.7":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[12.912575970000001,14.40467836,19.30234733,23.199924750000001,25.883950729999999,38.749394090000003,52.935118430000003,60.046533269999998,62.398373980000002,66.743056190000004,68.208356140000006,73.354795949999996,75.46052632,79.293544460000007,93.209999999999994],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8},"inherit":true}},"layout":{"margin":{"b":60,"l":60,"t":120,"r":10},"title":{"text":"<b> Tillgång till fast bredband om minst 100 Mbit/s,<br />andel (%) <b>","y":0.94999999999999996,"x":0.55000000000000004,"font":{"size":20,"color":"#B81867"}},"xaxis":{"domain":[0,1],"automargin":true,"title":"","tickangle":-45,"type":"category","categoryorder":"array","categoryarray":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b>Andel (%)<b>","rangemode":"tozero"},"hovermode":"x unified","annotations":[{"text":"Källa: Kolada och Post- och telestyrelsen","x":0,"y":-0.20000000000000001,"xref":"paper","yref":"paper","xanchor":"left","yanchor":"bottom","showarrow":false,"font":{"size":12}}],"showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"modeBarButtonsToRemove":["zoom2d","pan2d","select2d","lasso2d","zoomIn2d","zoomOut2d"],"displaylogo":false},"data":[{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[35.630226469999997,35.41000931,35.998000249999997,43.349692640000001,45.225562060000001,52.798740430000002,55.747276229999997,68.134820070000004,68.821369279999999,73.667372150000006,76.635469389999997,82.449058050000005,86.062271929999994,89.431197800000007,95.549999999999997],"type":"scatter","mode":"lines+markers","name":"Enköping","line":{"color":"#D57667","width":5},"marker":{"color":"#D57667","size":8,"line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[0.16462136999999999,0.17921147000000001,5.4294249399999996,8.0086741900000007,8.8423242700000007,13.207855970000001,25.491449580000001,35.313376990000002,47.348074840000002,54.877118000000003,66.270497969999994,75.277989340000005,79.978909310000006,81.354151029999997,96.129999999999995],"type":"scatter","mode":"lines+markers","name":"Heby","line":{"color":"#F9B000","width":5},"marker":{"color":"#F9B000","size":8,"line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[6.2940299299999998,8.6161214699999995,7.40158279,51.069074809999996,51.64570913,53.581003449999997,63.29082271,71.374787470000001,76.367772059999993,85.415933359999997,88.388332020000007,89.360284320000005,91.086320810000004,99.989461480000003,98.939999999999998],"type":"scatter","mode":"lines+markers","name":"Håbo","line":{"color":"#019CD7","width":5},"marker":{"color":"#019CD7","size":8,"line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[17.003100239999998,23.579603169999999,29.249433410000002,32.097395390000003,35.409332390000003,55.239327299999999,62.647382489999998,70.714834740000001,67.880499409999999,76.736307170000003,81.693491949999995,87.202572349999997,90.266264759999999,92.983511849999999,98.349999999999994],"type":"scatter","mode":"lines+markers","name":"Knivsta","line":{"color":"#D0342C","width":5},"marker":{"color":"#D0342C","size":8,"line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[16.822196720000001,17.760771259999999,20.143454869999999,22.218914359999999,23.819923559999999,32.059314950000001,34.83765571,48.442241549999999,51.859196830000002,54.374754230000001,59.452565489999998,63.345410630000003,65.322174039999993,77.891566269999998,89.829999999999998],"type":"scatter","mode":"lines+markers","name":"Tierp","line":{"color":"#4AA271","width":5},"marker":{"color":"#4AA271","size":8,"line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[51.710009499999998,55.564768100000002,59.790510470000001,61.773182650000003,70.064426839999996,81.949498849999998,87.116154870000003,89.174590879999997,89.821170269999996,91.959356959999994,93.756480780000004,94.001796200000001,96.052911179999995,97.492853940000003,98.939999999999998],"type":"scatter","mode":"lines+markers","name":"Uppsala","line":{"color":"#6F787E","width":5},"marker":{"color":"#6F787E","size":8,"line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[27.010036400000001,27.33465172,27.926936619999999,31.85381473,32.497261770000001,38.01102435,48.134750169999997,70.024625029999996,71.320418619999998,73.610493550000001,77.56119674,77.123011430000005,81.923677749999996,89.213085759999998,98.430000000000007],"type":"scatter","mode":"lines+markers","name":"Älvkarleby","line":{"color":"#8B4A9C","width":5},"marker":{"color":"#8B4A9C","size":8,"line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"],"y":[12.912575970000001,14.40467836,19.30234733,23.199924750000001,25.883950729999999,38.749394090000003,52.935118430000003,60.046533269999998,62.398373980000002,66.743056190000004,68.208356140000006,73.354795949999996,75.46052632,79.293544460000007,93.209999999999994],"type":"scatter","mode":"lines+markers","name":"Östhammar","line":{"color":"#E67E22","width":5},"marker":{"color":"#E67E22","size":8,"line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tillbred-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;3
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Tillgången till fast bredband om minst 100 Mbit i sekunden har utvecklats snabbt för samtliga kommuner de senaste 15 åren, störst ökning syns i Heby som gått från under 1 procent 2010/2011 till över 96 procent år 2024. Uppsala kommun låg i början av perioden före resterande kommuner i länet, med en andel över 80 procent redan år 2015, men skillnaderna mellan kommunernas tillgång till fast bredband om minst 100 Mbit/s är små. Tierp är den enda kommunen som inte har en andel över 90 procent.</p>
+<p>Regeringens delmål om att högst 1,9 procent av hushåll och företag i Sverige ska sakna tillgång till minst 100 Mbit/s är formulerat på nationell nivå. Det innebär att enskilda kommuner kan avvika från målet, så länge den samlade tillgången i landet som helhet uppfyller kravet.</p>
+</section>
+<section id="bredbandskollen" class="level2">
+<h2 class="anchored" data-anchor-id="bredbandskollen">Bredbandskollen</h2>
+<p>Bredbandskollen är en användarmätning av internetprestanda som samlar uppgifter om både nedströms- och uppströms-hastigheter för fast och mobilt bredband. Mätningarna genomförs dels via webbgränssnittet på datorer och surfplattor, dels via Bredbandskollens appar på mobiltelefoner.</p>
+<p>Resultaten ger en bild av den praktiska hastighet som användare upplever vid internetanvändning, vilket kompletterar de administrativa uppgifterna om teknisk tillgång och täckning från operatörer och myndigheter. Resultaten bör tolkas som en indikation på upplevd prestanda snarare än som exakta mått på nätens kapacitet.</p>
+<p>I detta avsnitt presenteras:</p>
+<p>Genomsnittliga nedströms- och uppströmsvärden via webbgränssnittet (oftast dator eller surfplatta).</p>
+<p>Genomsnittliga nedströms- och uppströmsvärden via mobilappar, där mätningar gjorda över wifi exkluderas.</p>
+<p>Data är hämtat från kolada som hänvisar vidare till <span class="citation" data-cites="bredbandskollen">Bredbandskollen (<a href="#ref-bredbandskollen" role="doc-biblioref">2025</a>)</span> och <span class="citation" data-cites="internetstiftelsen">Internetstiftelsen (<a href="#ref-internetstiftelsen" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false">Östhammar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<img src="Figurer/bredbandskollen_Enköping.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Enköping , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Enköping.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Enköping.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<img src="Figurer/bredbandskollen_Heby.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Heby , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Heby.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Heby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<img src="Figurer/bredbandskollen_Håbo.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Håbo , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Håbo.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Håbo.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<img src="Figurer/bredbandskollen_Knivsta.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Knivsta , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Knivsta.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Knivsta.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<img src="Figurer/bredbandskollen_Tierp.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Tierp , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Tierp.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Tierp.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<img src="Figurer/bredbandskollen_Uppsala.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Uppsala , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Uppsala.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Uppsala.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<img src="Figurer/bredbandskollen_Älvkarleby.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Älvkarleby , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
+<img src="Figurer/bredbandskollen_Östhammar.svg" alt="Genomsnittliga mätresultat från bredbandskollen i  Östhammar , uppdelat på Mobilt och webb för 2021 till 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bredbandskollen_Östhammar.svg" download="">Som SVG</a><a href="Figurer/bredbandskollen_Östhammar.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Generellt är webbmätningarna snabbare än mobil, vilket är logiskt och kan förklaras av att mätningarna då sker via ethernet eller wifi och inte mobilnätet, samt att hårdvaran på datorer är kraftfullare än i mobiltelefoner.</p>
+<p>När det gäller nedströms så visar alla kommuner en positiv utveckling med ökad hastighet på mätresultaten under perioden, för uppströms så syns det ej en utveckling för de flesta kommunerna när det gäller mobiltelefoner.</p>
+</section>
+</section>
+<section id="mobilt" class="level1">
+<h1>Mobilt</h1>
+<p>I detta avsnitt presenteras den genomsnittliga mobilmålstäckningen aggregerat över samtliga operatörer. Tabellen nedan gör det möjligt att sortera data efter kommun, år eller variabel. Eftersom data visar den sammanlagda mobiltäckningen för alla operatörer kan den ge en missvisande bild av den faktiska situationen, då enskilda användare inte har tillgång till, eller använder, samtliga operatörer samtidigt. Observera att inte alla kommuner har data för samtliga variabler och år.</p>
+<p>Data är hämtat från <span class="citation" data-cites="pts">Post- och telestyrelsen (PTS) (<a href="#ref-pts" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-mobil" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Dekorativ bild">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mobil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-mobil-1.png" class="img-fluid figure-img" style="width:50.0%" alt="Dekorativ bild">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mobil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;4: mobil
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variabler som ingår i mätningen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Mobilmålet givet aggregerad täckning av alla operatörer:</p>
+<ul>
+<li>Totalt, alla områden där man normalt befinner sig</li>
+<li>Statistisk tätort, 30 Mbit/s, handhållen terminal utomhus<br>
+</li>
+<li>Statistisk småort, 10 Mbit/s, handhållen terminal utomhus<br>
+</li>
+<li>Handelsområden, 30 Mbit/s, handhållen terminal utomhus<br>
+</li>
+<li>Områden runt byggnader i glesbygd, 10 Mbit/s, handhållen terminal utomhus<br>
+</li>
+<li>Områden runt byggnader i glesbygd med samhällsfunktion, 10 Mbit/s, handhållen terminal utomhus<br>
+</li>
+<li>Europavägar, 30 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Riksvägar, 30 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Övriga bilvägar med hög trafik, 30 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Övriga bilvägar med låg trafik, 10 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Järnvägar med hög trafik, 30 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Järnvägar med låg trafik, 10 Mbit/s, handhållen terminal inomhus<br>
+</li>
+<li>Leder, spår och stigar, 10 Mbit/s, handhållen terminal utomhus<br>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tbl-mobilt2" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-mobilt2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabell&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-mobilt2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div style="text-align: center; margin-bottom: 1em;">
+<p><label for="coverage-select" style="display: block; margin-bottom: 0.5em;">Välj variabel för tabell:</label> <select id="coverage-select" class="form-select" style="max-width: 420px; display: inline-block;"></select></p>
+</div>
+<h4 id="table-title" class="anchored">
+Totalt alla områden där man normalt befinner sig
+</h4>
+<table id="mobilt-table" class="table table-striped table-bordered">
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p style="margin-top: 1em; font-style: italic;">
+Källa: Post- och telestyrelsen (PTS)
+</p>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobiltData = [{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Totalt alla områden där man normalt befinner sig","2020":"94.32%","2021":"96.33%","2022":"96.88%","2023":"97.5%","2024":"98.31%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Totalt alla områden där man normalt befinner sig","2020":"96.62%","2021":"97.91%","2022":"98.01%","2023":"98.64%","2024":"99.28%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Totalt alla områden där man normalt befinner sig","2020":"83.29%","2021":"92.5%","2022":"93.44%","2023":"94.03%","2024":"94.65%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Totalt alla områden där man normalt befinner sig","2020":"97.81%","2021":"98.75%","2022":"98.8%","2023":"98.85%","2024":"99.6%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Totalt alla områden där man normalt befinner sig","2020":"97.99%","2021":"98.42%","2022":"98.59%","2023":"98.97%","2024":"99.44%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Totalt alla områden där man normalt befinner sig","2020":"91.64%","2021":"94.76%","2022":"95.35%","2023":"96.36%","2024":"97.49%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Totalt alla områden där man normalt befinner sig","2020":"96.1%","2021":"97.07%","2022":"97.47%","2023":"98.13%","2024":"99.12%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Totalt alla områden där man normalt befinner sig","2020":"87.04%","2021":"90.32%","2022":"95.64%","2023":"95.98%","2024":"97.87%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Totalt alla områden där man normalt befinner sig","2020":"96.41%","2021":"96.71%","2022":"97%","2023":"97.51%","2024":"97.9%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"92.26%","2021":"97.68%","2022":"98.93%","2023":"99.18%","2024":"99.88%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.89%","2021":"99.9%","2022":"99.95%","2023":"99.98%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.83%","2021":"99.83%","2022":"99.9%","2023":"99.91%","2024":"99.91%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"52%","2021":"61.27%","2022":"65.48%","2023":"75.5%","2024":"96.43%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"46.86%","2021":"55.85%","2022":"58.33%","2023":"64.04%","2024":"78.14%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"46.16%","2021":"55.67%","2022":"57.57%","2023":"63.24%","2024":"82.74%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"88.68%","2021":"89.77%","2022":"90.26%","2023":"92.23%","2024":"92.21%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"53.35%","2021":"62.3%","2022":"62.62%","2023":"73.69%","2024":"87.88%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"93.99%","2021":"93.99%","2022":"94.85%","2023":"96.18%","2024":"96.33%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"98.8%","2021":"99.06%","2022":"99.29%","2023":"99.75%","2024":"99.77%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"95.11%","2021":"98.47%","2022":"98.78%","2023":"98.94%","2024":"99.82%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.98%","2022":"99.98%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"63.05%","2021":"76.97%","2022":"75.52%","2023":"93.97%","2024":"99.09%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"50.69%","2021":"65.34%","2022":"64.08%","2023":"74.81%","2024":"91.88%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"54.58%","2021":"61.66%","2022":"61.9%","2023":"69.14%","2024":"87.27%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"94.99%","2021":"95.78%","2022":"96.24%","2023":"97.04%","2024":"96.98%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"59.54%","2021":"74.06%","2022":"74.65%","2023":"84.48%","2024":"94.82%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"99.71%","2021":"99.83%","2022":"99.89%","2023":"99.89%","2024":"99.89%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"57%","2021":"98.77%","2022":"99.68%","2023":"99.64%","2024":"99.9%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.18%","2021":"99.29%","2022":"99.72%","2023":"99.88%","2024":"99.92%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"98.56%","2021":"98.56%","2022":"99.13%","2023":"99.2%","2024":"99.2%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"17.87%","2021":"29.41%","2022":"38.18%","2023":"39.89%","2024":"44.81%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"20.62%","2021":"40.65%","2022":"42.42%","2023":"43.61%","2024":"75.63%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"76.61%","2021":"78.14%","2022":"79.52%","2023":"81.68%","2024":"82.24%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"48.31%","2021":"65.92%","2022":"73.16%","2023":"73.53%","2024":"78.04%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"97.52%","2021":"97.41%","2022":"98.64%","2023":"98.69%","2024":"99.05%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"97.69%","2021":"99.11%","2022":"99.17%","2023":"98.93%","2024":"99.82%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"85.7%","2021":"86.08%","2022":"87.77%","2023":"96.99%","2024":"98%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"75.56%","2021":"76.56%","2022":"75.52%","2023":"74.13%","2024":"86.04%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"98.81%","2021":"99.16%","2022":"98.96%","2023":"99.13%","2024":"99.27%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"94.64%","2021":"96.6%","2022":"95.27%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"68.05%","2021":"76.31%","2022":"80.01%","2023":"89.49%","2024":"99.77%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"65.97%","2021":"84.41%","2022":"83.65%","2023":"89.63%","2024":"92.04%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"53.52%","2021":"56.04%","2022":"62.37%","2023":"67.29%","2024":"82.66%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"97.47%","2021":"97.8%","2022":"97.82%","2023":"98.31%","2024":"98.28%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"99.15%","2021":"99.15%","2022":"99.15%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"87.8%","2021":"98.7%","2022":"99.51%","2023":"99.9%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.94%","2021":"99.93%","2022":"99.94%","2023":"99.98%","2024":"99.98%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.97%","2021":"99.97%","2022":"99.97%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"20.34%","2021":"36.06%","2022":"52.13%","2023":"58.92%","2024":"94.92%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"30.13%","2021":"39.44%","2022":"47.37%","2023":"59.14%","2024":"86.45%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"24.25%","2021":"52.46%","2022":"54.54%","2023":"59.56%","2024":"72.73%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"86.07%","2021":"87.75%","2022":"87.94%","2023":"90.87%","2024":"91.05%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"22.38%","2021":"31.82%","2022":"35.71%","2023":"53.63%","2024":"65.93%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"98.99%","2021":"99.17%","2022":"99.6%","2023":"99.63%","2024":"99.59%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"95.28%","2021":"97.4%","2022":"98.33%","2023":"98.77%","2024":"99.82%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.98%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2020":"68.06%","2021":"68.71%","2022":"68.71%","2023":"77.33%","2024":"97.58%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"69.04%","2021":"73.68%","2022":"71.54%","2023":"72.59%","2024":"94.31%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"54.4%","2021":"59.75%","2022":"61.99%","2023":"70.88%","2024":"89.39%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"92.31%","2021":"93.04%","2022":"93.41%","2023":"95.43%","2024":"95.37%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"62.32%","2021":"66.8%","2022":"64.31%","2023":"78.93%","2024":"94.17%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"98.56%","2021":"98.61%","2022":"98.61%","2023":"99.98%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"85.64%","2021":"90.11%","2022":"99.52%","2023":"99.74%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","2021":"16.12%","2022":"13.3%","2023":"13.7%","2024":"80.49%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"88.97%","2021":"87.83%","2022":"87.44%","2023":"86.89%","2024":"88.79%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"26.22%","2021":"52.28%","2022":"49.88%","2023":"50.3%","2024":"83.44%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"87.96%","2021":"88.93%","2022":"88.1%","2023":"89.87%","2024":"89.05%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"34.66%","2021":"53.31%","2022":"51.19%","2023":"49.94%","2024":"91.48%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"99.87%","2021":"99.87%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","2020":"98.56%","2021":"98.82%","2022":"99.36%","2023":"99.68%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","2020":"99.9%","2021":"99.9%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","2020":"39.56%","2021":"39.59%","2022":"43.91%","2023":"52.03%","2024":"64.93%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","2020":"40.68%","2021":"44.26%","2022":"46.22%","2023":"47.84%","2024":"72.18%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"86.73%","2021":"87.95%","2022":"88.69%","2023":"90.97%","2024":"90.47%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","2023":"54.54%","2024":"86.69%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","2020":"93.55%","2021":"93.55%","2022":"94.48%","2023":"95.91%","2024":"96.07%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","2020":"99.99%","2021":"99.99%","2022":"99.99%","2023":"99.99%","2024":"99.99%"},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","2020":"98.21%","2021":"99.58%","2022":"99.7%","2023":"99.78%","2024":"99.67%"}];
+  const years = ["2020","2021","2022","2023","2024"];
+
+  const select = document.getElementById('coverage-select');
+  const coverages = [...new Set(mobiltData.map(d => d.coverage))];
+
+  // Sortera så att 'Totalt...' alltid först
+  coverages.sort((a,b) => {
+    if(a === 'Totalt alla områden där man normalt befinner sig') return -1;
+    if(b === 'Totalt alla områden där man normalt befinner sig') return 1;
+    return a.localeCompare(b);
+  });
+
+  // Lägg till options
+  coverages.forEach(cov => {
+    const opt = document.createElement('option');
+    opt.value = cov;
+    opt.textContent = cov;
+    select.appendChild(opt);
+  });
+
+  // Funktion för att rendera tabell
+  function renderTable(coverage) {
+    const rows = mobiltData.filter(d => d.coverage === coverage);
+    document.getElementById('table-title').textContent = coverage;
+
+    const thead = document.querySelector('#mobilt-table thead');
+    thead.innerHTML = '';
+    const headerRow = document.createElement('tr');
+    ['Kommun / län', ...years].forEach(h => {
+      const th = document.createElement('th');
+      th.textContent = h;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+
+    const tbody = document.querySelector('#mobilt-table tbody');
+    tbody.innerHTML = '';
+    rows.forEach(r => {
+      const tr = document.createElement('tr');
+      const tdName = document.createElement('td');
+      tdName.textContent = r.kommun_lan_riket;
+      tr.appendChild(tdName);
+      years.forEach(y => {
+        const td = document.createElement('td');
+        td.textContent = r[y] ?? '';
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Rendera default
+  renderTable('Totalt alla områden där man normalt befinner sig');
+
+  // Lyssna på dropdownändring
+  select.addEventListener('change', e => {
+    renderTable(e.target.value);
+  });
+});
+</script>
+</div>
+</figure>
+</div>
+<section id="per-operatör" class="level2">
+<h2 class="anchored" data-anchor-id="per-operatör">Per operatör</h2>
+<p>För att ge en mer rättvisande och praktiskt relevant beskrivning av användarupplevelsen så redovisas också resultaten av mobilmålet givet täckning per operatör. I <a href="#tbl-mobilt_operator" class="quarto-xref">Tabell&nbsp;2</a> presenteras mobilmålet givet täckning för år 2024 uppdelat på operatörerna Telenor, Tele2, Telia Company och Tre.</p>
+<div id="tbl-mobilt_operator" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-mobilt_operator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabell&nbsp;2
+</figcaption>
+<div aria-describedby="tbl-mobilt_operator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div style="text-align: center; margin-bottom: 1em;">
+<p><label for="coverage-select" style="display: block; margin-bottom: 0.5em;">Välj variabel för tabell:</label> <select id="coverage-select2" class="form-select" style="max-width: 420px; display: inline-block;"></select></p>
+</div>
+<h4 id="table-title2" class="anchored">
+Totalt alla områden där man normalt befinner sig
+</h4>
+<table id="mobilt-table2" class="table table-striped table-bordered">
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p style="margin-top: 1em; font-style: italic;">
+Källa: Post- och telestyrelsen (PTS)
+</p>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobiltData = [{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"94.18%","Tele2":"94.36%","Telia":"92.06%","Tre":"91.67%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"95.17%","Tele2":"95.46%","Telia":"94.61%","Tre":"96.87%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"86.37%","Tele2":"86.62%","Telia":"87.1%","Tre":"84.16%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"96.88%","Tele2":"96.84%","Telia":"91.25%","Tre":"98.02%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"96.1%","Tele2":"96.21%","Telia":"96.55%","Tre":"97.16%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"91.28%","Tele2":"91.71%","Telia":"88.4%","Tre":"84.4%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"96.07%","Tele2":"96.21%","Telia":"93.25%","Tre":"94.97%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"91.12%","Tele2":"91.5%","Telia":"90.9%","Tre":"93.79%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Totalt alla områden där man normalt befinner sig","Telenor":"95.53%","Tele2":"95.5%","Telia":"92.09%","Tre":"86.33%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"94.02%","Tele2":"94.02%","Telia":"95.38%","Tre":"97.29%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.9%","Tele2":"99.91%","Telia":"99.59%","Tre":"98.39%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.51%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.62%","Tele2":"99.68%","Telia":"98.52%","Tre":"96.02%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.68%","Tele2":"99.68%","Telia":"98.59%","Tre":"98%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"61.61%","Tele2":"61.61%","Telia":"55.52%","Tre":"92.62%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"48.99%","Tele2":"48.99%","Telia":"51.05%","Tre":"71.09%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"51.75%","Tele2":"51.75%","Telia":"44.35%","Tre":"67.16%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"83.94%","Tele2":"85.03%","Telia":"72.16%","Tre":"67.78%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"67.18%","Tele2":"67.18%","Telia":"53.06%","Tre":"82.81%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"93.68%","Tele2":"93.07%","Telia":"80.74%","Tre":"58.9%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"97.46%","Tre":"99.14%","År":2024},{"kommun_lan_riket":"Uppsala län","kod":"03","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"97.72%","Tele2":"97.76%","Telia":"97.97%","Tre":"85.24%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"87.63%","Tele2":"87.63%","Telia":"98.31%","Tre":"99.44%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.22%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.71%","Tele2":"99.94%","Telia":"98.68%","Tre":"98.84%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"98.78%","Tre":"98.79%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"93.9%","Tele2":"93.9%","Telia":"83.18%","Tre":"90.98%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"59.45%","Tele2":"59.45%","Telia":"58.58%","Tre":"86.89%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"57.39%","Tele2":"57.39%","Telia":"42.85%","Tre":"80.47%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"92.85%","Tele2":"94.02%","Telia":"79.94%","Tre":"87.45%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"90.14%","Tele2":"90.14%","Telia":"79.34%","Tre":"90.17%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"98.84%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Enköping","kod":"0381","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"99.23%","Tele2":"99.31%","Telia":"98.66%","Tre":"94.8%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"84.37%","Tele2":"84.37%","Telia":"95.12%","Tre":"99.37%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"94.9%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"98.46%","Tele2":"98.48%","Telia":"96.79%","Tre":"92.56%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"98.06%","Tele2":"98.06%","Telia":"95.53%","Tre":"95.63%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"31.75%","Tele2":"31.75%","Telia":"31.9%","Tre":"40.8%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"24.04%","Tele2":"24.04%","Telia":"37.48%","Tre":"74.2%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"65.91%","Tele2":"67%","Telia":"62.68%","Tre":"54.33%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"72.34%","Tele2":"72.34%","Telia":"57.57%","Tre":"76%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.86%","Tre":"91.82%","År":2024},{"kommun_lan_riket":"Heby","kod":"0331","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"93.82%","Tele2":"94.11%","Telia":"95.83%","Tre":"71.61%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"96.56%","Tele2":"96.56%","Telia":"90.14%","Tre":"99.34%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.4%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"91.77%","Tele2":"91.77%","Telia":"60.69%","Tre":"90.63%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"51.87%","Tele2":"51.87%","Telia":"41.43%","Tre":"79.36%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"98.15%","Tele2":"97.61%","Telia":"87.17%","Tre":"85.7%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"68.56%","Tre":"91.76%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.82%","År":2024},{"kommun_lan_riket":"Håbo","kod":"0305","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"97.62%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"95.51%","Tele2":"95.51%","Telia":"98.88%","Tre":"98.73%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"98.8%","Tele2":"98.8%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.96%","Tele2":"99.96%","Telia":"99.99%","Tre":"99.84%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"89.13%","Tele2":"89.13%","Telia":"62.09%","Tre":"99.25%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"66.16%","Tele2":"66.16%","Telia":"65.21%","Tre":"78.88%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"27.34%","Tele2":"27.34%","Telia":"54.98%","Tre":"70.2%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"91.56%","Tele2":"92.58%","Telia":"87.88%","Tre":"84.09%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"76.51%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Knivsta","kod":"0330","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"99.41%","Tele2":"99.41%","Telia":"99.99%","Tre":"95%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"89.59%","Tele2":"89.59%","Telia":"93.06%","Tre":"96.92%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.9%","Tele2":"99.99%","Telia":"99.85%","Tre":"97.49%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.3%","Tele2":"99.28%","Telia":"98.54%","Tre":"89.97%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"98.94%","Tre":"95.13%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"29.12%","Tele2":"29.12%","Telia":"45.96%","Tre":"92.05%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"47.92%","Tele2":"47.92%","Telia":"44.01%","Tre":"66.78%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"49.92%","Tele2":"49.92%","Telia":"39.38%","Tre":"57.83%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"81.09%","Tele2":"83.18%","Telia":"67.67%","Tre":"55.75%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"34.64%","Tele2":"34.64%","Telia":"37.37%","Tre":"55.55%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"94.47%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"86.54%","Tre":"98.52%","År":2024},{"kommun_lan_riket":"Tierp","kod":"0360","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"97.31%","Tele2":"97.31%","Telia":"98.39%","Tre":"74.86%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"96.78%","Tele2":"96.78%","Telia":"94.92%","Tre":"96.83%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.37%","Tre":"98.42%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.35%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.88%","Tele2":"99.92%","Telia":"98.76%","Tre":"99.12%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.59%","Tele2":"99.59%","Telia":"99.26%","Tre":"99.16%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"58.08%","Tele2":"58.08%","Telia":"46.29%","Tre":"97.06%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"56.63%","Tele2":"56.63%","Telia":"71.11%","Tre":"92.54%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"60.55%","Tele2":"60.55%","Telia":"50.27%","Tre":"69.64%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"88.34%","Tele2":"89.41%","Telia":"76.39%","Tre":"77.44%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"73.4%","Tele2":"73.4%","Telia":"52.56%","Tre":"90.15%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.3%","Tre":"99.96%","År":2024},{"kommun_lan_riket":"Uppsala","kod":"0380","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"98.18%","Tele2":"98.18%","Telia":"99.41%","Tre":"90.66%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"94.53%","Tele2":"94.53%","Telia":"95.33%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.61%","Tele2":"99.99%","Telia":"99.99%","Tre":"98.98%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Europavägar 30 mbit s handhållen terminal inomhus","Telenor":"307.52%","Tele2":"307.52%","Telia":"13.3%","Tre":"75.18%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"53.02%","Tele2":"53.02%","Telia":"62.3%","Tre":"78.95%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"59.07%","Tele2":"59.07%","Telia":"27.95%","Tre":"75.35%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"80.5%","Tele2":"83.27%","Telia":"74.68%","Tre":"61.17%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"43.18%","Tele2":"43.18%","Telia":"30.53%","Tre":"87.13%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Älvkarleby","kod":"0319","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"99.58%","Tele2":"99.58%","Telia":"99.99%","Tre":"87.71%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Statistisk tätort 30 mbit s handhållen terminal utomhus","Telenor":"96.65%","Tele2":"96.65%","Telia":"98.98%","Tre":"91.92%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Statistisk småort 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"94.94%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Handelsområden 30 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.99%","Tre":"99.99%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Områden runt byggnader i glesbygd 10 mbit s handhållen terminal utomhus","Telenor":"99.9%","Tele2":"99.9%","Telia":"98.39%","Tre":"93.83%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Områden runt byggnader i glesbygd med samhällsfunktion 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"97.88%","Tre":"98.34%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Riksvägar 30 mbit s handhållen terminal inomhus","Telenor":"36.89%","Tele2":"36.89%","Telia":"31.36%","Tre":"55.53%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Övriga bilvägar med hög trafik 30 mbit s handhållen terminal inomhus","Telenor":"45.09%","Tele2":"45.09%","Telia":"36.34%","Tre":"50.45%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Övriga bilvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"83.63%","Tele2":"83.49%","Telia":"65.39%","Tre":"54.04%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Järnvägar med låg trafik 10 mbit s handhållen terminal inomhus","Telenor":"93.22%","Tele2":"92.57%","Telia":"79.36%","Tre":"56.35%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Anläggningar för rekreation idrott industri och samhällsfunktioner 10 mbit s handhållen terminal utomhus","Telenor":"99.99%","Tele2":"99.99%","Telia":"99.88%","Tre":"96.73%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Leder spår och stigar 10 mbit s handhållen terminal utomhus","Telenor":"96.87%","Tele2":"96.81%","Telia":"93.72%","Tre":"77%","År":2024},{"kommun_lan_riket":"Östhammar","kod":"0382","coverage":"Järnvägar med hög trafik 30 mbit s handhållen terminal inomhus","Tre":"86.69%","År":2024}];
+  const years = ["Telenor","Tele2","Telia","Tre"];
+
+  const select = document.getElementById('coverage-select2');
+  const coverages = [...new Set(mobiltData.map(d => d.coverage))];
+
+  // Sortera så att 'Totalt...' alltid först
+  coverages.sort((a,b) => {
+    if(a === 'Totalt alla områden där man normalt befinner sig') return -1;
+    if(b === 'Totalt alla områden där man normalt befinner sig') return 1;
+    return a.localeCompare(b);
+  });
+
+  // Lägg till options
+  coverages.forEach(cov => {
+    const opt = document.createElement('option');
+    opt.value = cov;
+    opt.textContent = cov;
+    select.appendChild(opt);
+  });
+
+  // Funktion för att rendera tabell
+  function renderTable(coverage) {
+    const rows = mobiltData.filter(d => d.coverage === coverage);
+    document.getElementById('table-title2').textContent = coverage;
+
+    const thead = document.querySelector('#mobilt-table2 thead');
+    thead.innerHTML = '';
+    const headerRow = document.createElement('tr');
+    ['Kommun / län', ...years].forEach(h => {
+      const th = document.createElement('th');
+      th.textContent = h;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+
+    const tbody = document.querySelector('#mobilt-table2 tbody');
+    tbody.innerHTML = '';
+    rows.forEach(r => {
+      const tr = document.createElement('tr');
+      const tdName = document.createElement('td');
+      tdName.textContent = r.kommun_lan_riket;
+      tr.appendChild(tdName);
+      years.forEach(y => {
+        const td = document.createElement('td');
+        td.textContent = r[y] ?? '';
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Rendera default
+  renderTable('Totalt alla områden där man normalt befinner sig');
+
+  // Lyssna på dropdownändring
+  select.addEventListener('change', e => {
+    renderTable(e.target.value);
+  });
+});
+</script>
+</div>
+</figure>
+</div>
+<p>Genom att titta på mobilmålstäckningen per operatör så ser vi att resultaten är lägre än de aggregerade i <a href="#tbl-mobilt2" class="quarto-xref">Tabell&nbsp;1</a>. Tele2 är den operatören som generellt har bäst täckning i länet sett till ‘Totalt alla områden där man normalt befinner sig’, på 94,36 %. Lägst genomsnittlig täckning har Tre, med 91,67 %, täckningen för Tre varierar dessutom mycket mellan kommunerna; operatören uppvisar både de högsta och de lägsta värdena i olika områden.</p>
+</section>
+<section id="tillgång-till-5g" class="level2">
+<h2 class="anchored" data-anchor-id="tillgång-till-5g">Tillgång till 5G</h2>
+<p>Detta avsnitt beskriver tillgången till 5G för hushåll i länets kommuner, uppdelat på områdestyp: tätbebyggda områden och glesbygd. Redovisningen omfattar både antal och andel hushåll med tillgång till 5G.</p>
+<p>Genom att separera tätbebyggda områden och glesbygd synliggörs skillnader i utbyggnadstakt och täckningsgrad mellan olika typer av bebyggelse.</p>
+<p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar vidare till <span class="citation" data-cites="pts">Post- och telestyrelsen (PTS) (<a href="#ref-pts" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Tätbyggt</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Glesbygd</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<img src="Figurer/femg_Tätbyggt.svg" alt="Figuren visar andelen och antalet med tillgång till 5G inom hushåll i  Tätbyggt område, för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/femg_Tätbyggt.svg" download="">Som SVG</a><a href="Figurer/femg_Tätbyggt.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<img src="Figurer/femg_Glesbygd.svg" alt="Figuren visar andelen och antalet med tillgång till 5G inom hushåll i  Glesbygd område, för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/femg_Glesbygd.svg" download="">Som SVG</a><a href="Figurer/femg_Glesbygd.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>I tätbyggda områden så har nästan alla hushåll tillgång till 5G i länets kommuner, men på glesbygden är det något lägre andelar, där Heby har den lägsta andelen på 77.3 procent och Uppsala kommun har näst lägst andel på 90.9 procent.</p>
+<p>Notera att skalan på x-axeln skiljer sig för ‘Antal hushåll’ mellan Tätbyggt och Glesbygd.</p>
+</section>
+</section>
+<section id="tekniker" class="level1">
+<h1>Tekniker</h1>
+<p>Detta avsnitt beskriver tillgången till olika bredbandstekniker bland hushåll, uppdelat per kommun. Redovisningen omfattar både trådbundna tekniker (såsom xDSL, fiber och kabel-tv) och trådlösa tekniker (såsom HSPA, LTE, NR/5G och fast radio), samt kombinationer av dessa.</p>
+<p>Graferna visar andel hushåll (%) med tillgång till respektive teknik, baserat på det senaste tillgängliga året i data. Endast tekniker med faktisk förekomst i kommunen redovisas i diagrammen.</p>
+<p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar vidare till <span class="citation" data-cites="pts">Post- och telestyrelsen (PTS) (<a href="#ref-pts" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-8" role="tab" aria-controls="tabset-3-8" aria-selected="false">Östhammar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<img src="Figurer/teknik_Enköping.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Enköping , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Enköping.svg" download="">Som SVG</a><a href="Figurer/teknik_Enköping.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<img src="Figurer/teknik_Heby.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Heby , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Heby.svg" download="">Som SVG</a><a href="Figurer/teknik_Heby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<img src="Figurer/teknik_Håbo.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Håbo , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Håbo.svg" download="">Som SVG</a><a href="Figurer/teknik_Håbo.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<img src="Figurer/teknik_Knivsta.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Knivsta , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Knivsta.svg" download="">Som SVG</a><a href="Figurer/teknik_Knivsta.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<img src="Figurer/teknik_Tierp.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Tierp , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Tierp.svg" download="">Som SVG</a><a href="Figurer/teknik_Tierp.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
+<img src="Figurer/teknik_Uppsala.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Uppsala , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Uppsala.svg" download="">Som SVG</a><a href="Figurer/teknik_Uppsala.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-7-tab">
+<img src="Figurer/teknik_Älvkarleby.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Älvkarleby , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/teknik_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-8-tab">
+<img src="Figurer/teknik_Östhammar.svg" alt="Figuren visar andelen med tillgång till en viss teknik inom hushåll i  Östhammar , för år 2024" style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/teknik_Östhammar.svg" download="">Som SVG</a><a href="Figurer/teknik_Östhammar.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Sett till de moderna bredbandsteknikerna har samtliga kommuner mycket höga andelar av hushåll med tillgång. De lägre andelarna återfinns främst för äldre tekniker såsom xDSL, VDSL och kabel-tv, vilket tydligt visar att dessa successivt fasas ut till förmån för fiber och nyare tekniker.</p>
+<p>Bland de trådlösa teknikerna har HSPA en relativt hög andel, medan fast radio fortfarande har låg täckning i samtliga kommuner. LTE och NR (5G) har generellt hög tillgång, vilket speglar den moderna mobilnätsutbyggnaden och kompletterar fiber i områden där trådbunden anslutning inte är möjlig.</p>
+</section>
+<section id="karttjänster" class="level1">
+<h1>Karttjänster</h1>
+<p>Det finns i dagsläget ingen öppet tillgänglig rut- eller gridbaserad kartdata för bredbands- och mobiltäckning som kan användas direkt i denna analys. Den geografiska information som samlas in av myndigheter och operatörer publiceras främst i aggregerad form eller som interaktiva karttjänster utan möjlighet att ladda ner underliggande geodata.</p>
+<p>För en mer detaljerad och platsbaserad bild av tillgång, täckning och upplevda hastigheter hänvisas därför till följande externa karttjänster:</p>
+<ul>
+<li><p><strong>Bredbandskollen – täcknings- och hastighetskarta</strong><br>
+Visar användargenererade mätningar av faktisk internetprestanda (nedströms, uppströms och svarstid) för både fast och mobilt bredband.<br>
+<a href="https://www.bredbandskollen.se/karta/" class="uri">https://www.bredbandskollen.se/karta/</a></p></li>
+<li><p><strong>PTS Bredbandskartan</strong><br>
+Post- och telestyrelsens officiella karttjänst som visar tillgång till fast bredband och mobiltäckning baserat på operatörernas inrapporterade uppgifter. Kartan ger en översikt av tekniker, hastighetsnivåer och täckningsgrad per område.<br>
+<a href="https://bredbandskartan.pts.se/" class="uri">https://bredbandskartan.pts.se/</a></p></li>
+<li><p><strong>Surf.nu – operatörernas täckningskartor</strong><br>
+Sammanställning av mobiloperatörernas egna täckningskartor för olika tekniker (4G, 5G m.fl.), lämpad för jämförelser mellan operatörer på lokal nivå.<br>
+<a href="https://www.surf.nu/tackningskarta/" class="uri">https://www.surf.nu/tackningskarta/</a></p></li>
+</ul>
+<p>Dessa karttjänster kompletterar den statistiska analysen genom att ge en mer detaljerad och visuell bild av bredbands- och mobiltäckningen, men bör tolkas med hänsyn till att de baseras på olika datakällor, antaganden och mätmetoder.</p>
+
+
+</section>
+<section id="bibliography" class="level1 unnumbered">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Källor</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bredbandskollen" class="csl-entry" role="listitem">
+Bredbandskollen. 2025. <span>”Bredbandskollen”</span>. <a href="https://www.bredbandskollen.se/statistik/">https://www.bredbandskollen.se/statistik/</a>.
+</div>
+<div id="ref-internetstiftelsen" class="csl-entry" role="listitem">
+Internetstiftelsen. 2025. <span>”Internetstiftelsen”</span>. <a href="https://internetstiftelsen.se/">https://internetstiftelsen.se/</a>.
+</div>
+<div id="ref-pts" class="csl-entry" role="listitem">
+Post- och telestyrelsen (PTS). 2025. <span>”Post- och telestyrelsen – Säker och tillgänglig kommunikation för Sverige”</span>. <a href="https://www.pts.se/">https://www.pts.se/</a>.
+</div>
+<div id="ref-kolada" class="csl-entry" role="listitem">
+Rådet för främjande av kommunala analyser. 2025. <span>”Kolada – Jämför och analysera nyckeltal i kommuner och regioner”</span>. <a href="https://www.kolada.se/">https://www.kolada.se/</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+
+
+
+
+<div class="contact-widget">
+
+  <input type="checkbox" id="contact-toggle">
+
+
+
+  <label for="contact-toggle" class="contact-button" title="Kontakt">
+
+    💬
+
+  </label>
+
+
+
+  <div class="floating-contact-box">
+
+    <strong>Vid frågor kontakta</strong><br>
+
+    Region Uppsala - Regional Utveckling <br>
+
+    <a href="mailto:regionalutveckling.analys@regionuppsala.se">regionalutveckling.analys@regionuppsala.se</a><br>
+
+  </div>
+
+</div>
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopierat!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopierat!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
