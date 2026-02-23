@@ -1,4 +1,4 @@
-/* ==== Tema-variabler (behåll gärna) ==== */
+/* ==== Tema-variabler ==== */
 :root{
   --accent:#B81867;
   --accent-2:#a61c6e;
@@ -7,12 +7,7 @@
   --bg:#ffffff;
   --bg-soft:#f3dce8;
   --border:#e6e6e6;
-
-  /* övergripande maxbredd kan vara kvar om du vill, men styr nu mest bakgrunden */
   --maxw:1200px;
-
-  /* DEN HÄR styr bredden på själva vita "kortet" = samma på alla .qmd */
-  --contentw:1100px;
 }
 
 /* Bas */
@@ -24,7 +19,6 @@ body{
   background:#f2f2f6;
   line-height:1.6;
 }
-
 /* ==== HEADER / NAVBAR (Quarto) ==== */
 #quarto-header .navbar{
   background:#B81867 !important;
