@@ -41,11 +41,10 @@ body{
   filter:invert(1) grayscale(1);
 }
 
-/* Låt själva Quarto-grid fylla bredden (ingen smal container) */
-.quarto-container{
-  max-width: 100%;
+.quarto-container, .page-columns{
+  max-width: var(--maxw);
+  margin-left:auto; margin-right:auto;
 }
-
 /* (valfritt: om du vill ha en svag maxbredd på hela sidan)
 .page-columns{
   max-width: var(--maxw);
