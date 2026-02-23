@@ -43,15 +43,10 @@ body{
 
 .quarto-container, .page-columns{
   max-width: var(--maxw);
-  margin-left:auto; margin-right:auto;
-}
-/* (valfritt: om du vill ha en svag maxbredd på hela sidan)
-.page-columns{
-  max-width: var(--maxw);
-  margin-left:auto;
+  margin-left:auto; 
   margin-right:auto;
 }
-*/
+
 
 /* ==== SIDEBAR ==== */
 #quarto-sidebar{
@@ -80,11 +75,6 @@ body{
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,.08);
   padding:28px 36px;
-
-  /* Samma bredd på alla .qmd – bara ändra var(--contentw) i :root */
-  max-width: var(--contentw);
-  margin-left:auto;
-  margin-right:auto;
 }
 
 /* Typografi */
